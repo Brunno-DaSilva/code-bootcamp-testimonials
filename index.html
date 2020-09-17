@@ -1,38 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Coding Bootcamp Testimonials Slider</title>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+    <!--Main Stylesheet-->
 
-  Tanya Sinclair
-  UX Engineer
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <!--
+      [x] A. Set up basic HTML structure 
+      [ ] B. Style the Application 
+      [ ] C. Make it responsive
+      [ ] D. Create the JavaScript Slider
 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
+    -->
 
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!--
+     Part A:
+          [x] 1. Testimonial Section
+          [x] 2. Add Slides one and two
+          [x] 3. Add wave at the bottom of section
+  -->
+
+    <section class="testimonials">
+      <div class="testimonials__slide">
+        <div class="testimonials__slide-One">
+          <div class="slide__left">
+            <div class="slide__left--text">
+              <div class="svg-quotes">
+                <img src="./images/pattern-quotes.svg" alt="SVG background" />
+              </div>
+              <p>
+                “ I’ve been interested in coding for a while but never taken the
+                jump, until now. I couldn’t recommend this course enough. I’m
+                now in the job of my dreams and so excited about the future. ”
+              </p>
+            </div>
+            <div class="slide__left--author">
+              <p><span id="name">Tanya Sinclair</span> UX Engineer</p>
+            </div>
+          </div>
+          <div class="slide__right">
+            <div class="slide__right--svg">
+              <img src="./images/pattern-bg.svg" alt="SVG background" />
+            </div>
+            <img
+              id="tanya-img"
+              src="./images/image-tanya.jpg"
+              alt="Tanya Sinclair Junior UX Engineer"
+            />
+          </div>
+        </div>
+        <div class="testimonials__slide-Two displayNone">
+          <div class="slide__left">
+            <div class="slide__left--text">
+              <div>
+                <img src="./images/pattern-quotes.svg" alt="SVG background" />
+              </div>
+              <p>
+                “ If you want to lay the best foundation possible I’d recommend
+                taking this course. The depth the instructors go into is
+                incredible. I now feel so confident about starting up as a
+                professional developer. ”
+              </p>
+            </div>
+            <div class="slide__left--author">
+              <p><span> John Tarkpor</span> Junior Front-end Developer</p>
+            </div>
+          </div>
+          <div class="slide__right">
+            <div>
+              <img src="./images/pattern-bg.svg" alt="SVG background" />
+            </div>
+            <div>
+              <img
+                src="./images/image-john.jpg"
+                alt="John Tarkpor Junior Front-end Developer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__slide--btn">
+        <div>
+          <button>
+            <img src="images/icon-prev.svg" alt="previous slide" />
+          </button>
+        </div>
+        <div>
+          <button><img src="images/icon-next.svg" alt="next slide" /></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="svg-wave">
+      <img src="./images/pattern-curve.svg" alt="" />
+    </div>
+    <script src="./Js/app.js"></script>
+  </body>
 </html>
