@@ -19,24 +19,12 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
-    <!--
-      [x] A. Set up basic HTML structure 
-      [ ] B. Style the Application 
-      [ ] C. Make it responsive
-      [ ] D. Create the JavaScript Slider
-
-    -->
-
-    <!--
-     Part A:
-          [x] 1. Testimonial Section
-          [x] 2. Add Slides one and two
-          [x] 3. Add wave at the bottom of section
-  -->
-
     <section class="testimonials">
       <div class="testimonials__slide">
-        <div class="testimonials__slide-One slide-changer active">
+        <div
+          data-targe="slideOne"
+          class="testimonials__slide-One slide-changer active"
+        >
           <div class="slide__left">
             <div class="slide__left--text">
               <div class="svg-quotes">
@@ -63,7 +51,10 @@
             />
           </div>
         </div>
-        <div class="testimonials__slide-Two displayNone slide-changer">
+        <div
+          data-targe="slideTwo"
+          class="testimonials__slide-Two displayNone slide-changer"
+        >
           <div class="slide__left">
             <div class="slide__left--text">
               <div>
