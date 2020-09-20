@@ -37,13 +37,9 @@ const nextBtn = document.querySelector(`[data-action="nextBtn"]`);
 prevBtn.addEventListener("click", function () {
   slide[0].classList.remove("displayNone");
   slide[1].classList.add("displayNone");
-  console.log("slide 0", slide[0]);
-  console.log("slide 1", slide[1]);
 });
 
 nextBtn.addEventListener("click", function () {
   slide[1].classList.remove("displayNone");
   slide[0].classList.add("displayNone");
-  console.log("slide 0", slide[0]);
-  console.log("slide 1", slide[1]);
 });
