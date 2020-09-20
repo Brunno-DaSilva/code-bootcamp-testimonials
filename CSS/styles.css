@@ -40,9 +40,9 @@ body {
   width: 73%;
 }
 
-.testimonials__slide-One,
-.testimonials__slide-Two {
+.testimonials__slide-One {
   display: flex;
+  width: 100%;
 }
 
 .slide__left {
@@ -90,10 +90,11 @@ body {
   border-radius: 5px;
 }
 
-#tanya-img {
+#tanya-img, #john-img {
   -webkit-box-shadow: -1px 50px 20px 0px #00000062;
   box-shadow: 2px 30px 30px 0px #0000005b;
 }
+
 
 .displayNone {
   display: none;
@@ -106,7 +107,7 @@ body {
 
 .svg-wave {
   position: absolute;
-  top: 83.5%;
+  top: 85.5%;
   left: 0%;
 }
 
@@ -142,48 +143,106 @@ body {
   cursor: pointer;
 }
 
-/*******************
-
-Animation 
-
-*******************/
-
-.active {
-  z-index: 888;
+/*
+=======================================
+==>        Animations  
+=========================================
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-.slideInLeft {
-  animation-name: animateInLeft;
-  z-index: 888;
+
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
-.slideInRight {
-  animation-name: animateInRight;
-  z-index: 888;
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }
 
-.slideOutLeft {
-  transform: translateX(-130%);
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
 
-.slideOutRight {
-  transform: translateX(130%);
-}
 
-@keyframes animateInLeft {
-  0% {
-    transform: translateX(-130%);
+/************************
+=       Fade Right
+*************************/
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);*/
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
   }
-  100% {
-    transform: translateX(0%);
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
-@keyframes animateInRight {
-  0% {
-    transform: translateX(130%);
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);*/
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
   }
-  100% {
-    transform: translateX(0%);
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
+
+/************************
+=       Fade Left
+*************************/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);*/
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);*/
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+/*
+=======================================
+==>        END-Animations  
+=======================================
