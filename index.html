@@ -20,9 +20,10 @@
   </head>
   <body>
     <section class="testimonials">
-      <div class="testimonials__slide">
+      <div data-target="carousel" class="testimonials__slide">
+        <!--Slide One -->
         <div
-          data-targe="slideOne"
+          data-targe="slide"
           class="testimonials__slide-One slide-changer active"
         >
           <div class="slide__left">
@@ -51,8 +52,11 @@
             />
           </div>
         </div>
+        <!--END - Slide One -->
+
+        <!--Slide Two -->
         <div
-          data-targe="slideTwo"
+          data-targe="slide"
           class="testimonials__slide-Two displayNone slide-changer"
         >
           <div class="slide__left">
@@ -83,7 +87,9 @@
             </div>
           </div>
         </div>
+        <!--END - Slide Two -->
       </div>
+
       <div class="testimonials__slide--btn">
         <div>
           <button id="prev-btn">
