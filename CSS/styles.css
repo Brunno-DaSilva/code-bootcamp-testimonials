@@ -40,7 +40,8 @@ body {
   width: 73%;
 }
 
-.testimonials__slide-One {
+.testimonials__slide-One,
+.testimonials__slide-Two {
   display: flex;
 }
 
@@ -116,7 +117,7 @@ body {
 }
 
 .testimonials__slide--btn {
-  z-index: 800;
+  z-index: 889;
   width: 120px;
   position: absolute;
   top: 75%;
@@ -139,4 +140,50 @@ body {
   background-color: none;
   border: none;
   cursor: pointer;
+}
+
+/*******************
+
+Animation 
+
+*******************/
+
+.active {
+  z-index: 888;
+}
+
+.slideInLeft {
+  animation-name: animateInLeft;
+  z-index: 888;
+}
+
+.slideInRight {
+  animation-name: animateInRight;
+  z-index: 888;
+}
+
+.slideOutLeft {
+  transform: translateX(-130%);
+}
+
+.slideOutRight {
+  transform: translateX(130%);
+}
+
+@keyframes animateInLeft {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animateInRight {
+  0% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
